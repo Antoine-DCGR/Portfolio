@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio de Antoine Da Costa-Gomara Ruiz</title>
-  
-  <!-- Lien vers le fichier CSS externe -->
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio de Antoine Da Costa-Gomara Ruiz</title>
+<!-- Lien vers le fichier CSS -->
+<link rel="stylesheet" href="https://github.com/Antoine-DCGR/Portfolio/blob/main/script.js">
 </head>
 <body>
 
@@ -22,16 +21,68 @@
   </nav>
 </header>
 
+<section id="about-me">
+  <h1>Antoine Da Costa-Gomara Ruiz</h1>
+  <h2>Étudiant en BUT Informatique</h2>
+  <button>
+    <a href="#profil">Plus d'info</a>
+  </button>
+</section>
+
+<section id="profil">
+  <div id="profil-title">
+    <h2>A propos de moi</h2>
+  </div>
+  
+  <div id="profil-pict">
+    <img src="https://raw.githubusercontent.com/Antoine-DCGR/Portfolio/main/res/profil-pict.JPG" alt="Photo de Profil">
+  </div>
+  
+  <div id="profil-txt">
+    <p>
+      Bonjour, <br><br>
+      Je m’appelle Antoine DA COSTA GOMARA RUIZ, développeur web junior en alternance dans le cadre de mon BUT en Informatique à l’Université Sorbonne Paris Nord. Actuellement basé à Yerres, je suis passionné par le développement web et les nouvelles technologies. <br><br>
+      Avec plusieurs projets à mon actif, notamment la conception de sites web pour des événements ou des organisations, ainsi que la gestion et le développement de nouvelles fonctionnalités pour la startup BEBALLER, j’ai eu l’opportunité d'acquérir des compétences variées en HTML, CSS, JavaScript, PHP, et plus encore. J'ai également des expériences dans le développement d'applications Android et en programmation avec Python, ce qui enrichit mon profil technique. <br><br>
+      Curieux et toujours en quête d'apprentissage, je souhaite continuer à développer mes compétences en tant que développeur full stack. Ayant un goût prononcé pour la résolution de problèmes complexes et la création de solutions innovantes, je suis prêt à m’investir dans des projets à forte valeur ajoutée. <br><br>
+      Ouvert à tous types de secteurs, je suis motivé à apporter mon savoir-faire dans la conduite de projets et la gestion de systèmes informatiques pour répondre aux besoins des entreprises. <br><br>
+      N'hésitez pas à consulter mes réalisations et à me contacter pour toute collaboration ! <br><br>
+    </p>
+  </div>
+</section>
+
+<section id="status">
+  <div id="status-title">
+    <h2>Actuellement</h2>
+  </div>
+  
+  <div id="status-txt">
+    <p>En recherche d'une alternance</p>
+  </div>
+</section>
+
+<section id="skills">
+  <div id="skills-title">
+    <h2>Compétences</h2>
+  </div>
+
+  <div id="skills-visual">
+    <p>Visuel compétences</p>
+  </div>
+  
+  <div id="cv-pict">
+    <img src="https://raw.githubusercontent.com/Antoine-DCGR/Portfolio/main/res/CV_Antoine_DA_COSTA.jpg" alt="CV Antoine DA COSTA">
+  </div>
+
+  <div id="button-cv">
+    <a href="https://raw.githubusercontent.com/Antoine-DCGR/Portfolio/main/res/CV_Antoine_DA_COSTA.pdf" download="CV_Antoine_DA_COSTA.pdf">
+      <button>Télécharger le CV</button>
+    </a>
+  </div>
+</section>
+
 <section id="portfolio">
   <h2>Portfolio</h2>
 
-  <!-- Boutons pour afficher les projets scolaires ou personnels -->
-  <div class="buttons">
-    <button onclick="showCategory('scolaire')">Projets Scolaires</button>
-    <button onclick="showCategory('personnel')">Projets Personnels</button>
-  </div>
-
-  <!-- Projets Scolaires -->
   <div class="categorie" id="scolaire">
     <h3>Projets Scolaires</h3>
     <ul>
@@ -46,7 +97,6 @@
     </ul>
   </div>
 
-  <!-- Projets Personnels -->
   <div class="categorie" id="personnel">
     <h3>Projets Personnels</h3>
     <ul>
@@ -62,12 +112,18 @@
   </div>
 </section>
 
+<section id="contact">
+  <h2>Contactez-moi</h2>
+  <p>Vous pouvez me contacter via le formulaire ou les liens proposés, je vous répondrai dans les meilleurs délais.</p>
+  <p>Téléphone: 06 11 65 12 78</p>
+  <p>E-mail: antoine.dcgr@gmail.com</p>
+</section>
+
 <footer>
   <p>© Copyright 2024 | Antoine Da Costa-Gomara Ruiz | Tous droits réservés</p>
 </footer>
 
-<!-- Lien vers le fichier JavaScript externe -->
-<script src="script.js"></script>
-
+<!-- Lien vers le fichier JavaScript -->
+<script src="https://raw.githubusercontent.com/Antoine-DCGR/Portfolio/blob/main/script.js"></script>
 </body>
 </html>
