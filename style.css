@@ -1,0 +1,23 @@
+.categorie {
+  display: none; /* Cacher les catégories par défaut */
+}
+
+.active {
+  display: block; /* Afficher la catégorie active */
+}
+
+.buttons {
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007BFF;
+  color: white;
+}
