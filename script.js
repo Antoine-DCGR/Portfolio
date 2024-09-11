@@ -1,8 +1,10 @@
-function showCategory(category) {
-  // Cacher toutes les catégories
-  document.getElementById('scolaire').classList.remove('active');
-  document.getElementById('personnel').classList.remove('active');
-  
-  // Afficher la catégorie sélectionnée
-  document.getElementById(category).classList.add('active');
+function afficherScolaire() {
+  document.getElementById('scolaire').style.display = 'block';
+  document.getElementById('personnel').style.display = 'none';
 }
+
+function afficherPersonnel() {
+  document.getElementById('personnel').style.display = 'block';
+  document.getElementById('scolaire').style.display = 'none';
+}
+

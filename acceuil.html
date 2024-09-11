@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio de Antoine Da Costa-Gomara Ruiz</title>
 <!-- Lien vers le fichier CSS -->
-<link rel="stylesheet" href="https://github.com/Antoine-DCGR/Portfolio/blob/main/script.js">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -83,8 +83,15 @@
 <section id="portfolio">
   <h2>Portfolio</h2>
 
-  <div class="categorie" id="scolaire">
-    <h3>Projets Scolaires</h3>
+  <!-- Boutons pour filtrer les projets -->
+  <div class="project-buttons">
+    <button onclick="afficherScolaire()">Projets Scolaires</button>
+    <button onclick="afficherPersonnel()">Projets Personnels</button>
+  </div>
+
+  <!-- Projets Scolaires -->
+  <div class="categorie" id="scolaire" style="display:block ;">
+    
     <ul>
       <li>
         <h4>Conception d'un site pour Animath</h4>
@@ -97,8 +104,9 @@
     </ul>
   </div>
 
-  <div class="categorie" id="personnel">
-    <h3>Projets Personnels</h3>
+  <!-- Projets Personnels -->
+  <div class="categorie" id="personnel" style="display: none;">
+    
     <ul>
       <li>
         <h4>Développement du site BEBALLER</h4>
@@ -124,6 +132,6 @@
 </footer>
 
 <!-- Lien vers le fichier JavaScript -->
-<script src="https://raw.githubusercontent.com/Antoine-DCGR/Portfolio/blob/main/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
