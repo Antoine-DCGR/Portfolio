@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio de Antoine Da Costa-Gomara Ruiz</title>
-<link rel="stylesheet" href="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Antoine Da Costa-Gomara Ruiz</title>
+  
+  <!-- Lien vers le fichier CSS externe -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="header">
-    
   <nav>
     <ul class="navigation">
-      <li><a href="#about-me">Acceuil</a></li>
+      <li><a href="#about-me">Accueil</a></li>
       <li><a href="#profil">Profil</a></li>
       <li><a href="#compétence">Compétences</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
@@ -21,81 +22,52 @@
   </nav>
 </header>
 
-<section id="about-me">
-  <h1>Antoine Da Costa-Gomara Ruiz</h1>
-  <h2>Etudiant en BUT Informatique</h2>
-  <button>
-    <a href="#profil">Plus d'info</a>
-  </button>
-</section>
-
-<section id="profil">
-
-  <div id="title">
-    <h2>A propos de moi</h2>
-  </div>
-  
-  <div id="profil-pict">
-    <img src="../res/profil-pict.JPG" alt="Photo de Profil">
-  </div>
-  
-  <div id="profil-txt">
-    
-    <p>
-      Bonjour, <br><br>
-
-      Je m’appelle Antoine DA COSTA GOMARA RUIZ, développeur web junior en alternance dans le cadre de mon BUT en Informatique à l’Université Sorbonne Paris Nord. Actuellement basé à Yerres, je suis passionné par le développement web et les nouvelles technologies. <br><br>
-
-      Avec plusieurs projets à mon actif, notamment la conception de sites web pour des événements ou des organisations, ainsi que la gestion et le développement de nouvelles fonctionnalités pour la startup BEBALLER, j’ai eu l’opportunité d'acquérir des compétences variées en HTML, CSS, JavaScript, PHP, et plus encore. J'ai également des expériences dans le développement d'applications Android et en programmation avec Python, ce qui enrichit mon profil technique. <br><br>
-
-      Curieux et toujours en quête d'apprentissage, je souhaite continuer à développer mes compétences en tant que développeur full stack. Ayant un goût prononcé pour la résolution de problèmes complexes et la création de solutions innovantes, je suis prêt à m’investir dans des projets à forte valeur ajoutée. <br><br>
-
-      Ouvert à tous types de secteurs, je suis motivé à apporter mon savoir-faire dans la conduite de projets et la gestion de systèmes informatiques pour répondre aux besoins des entreprises. <br><br>
-
-      N'hésitez pas à consulter mes réalisations et à me contacter pour toute collaboration ! <br><br>
-    </p>
-
-  </div>
-
-</section>
-
-<section id="status">
-  <h2>Actuellement</h2>
-  <p>En recherche d'une alternance</p>
-
-</section>
-
-<section id="competences">
-  <h2>Compétences</h2>
-  <p> mettre visuel avec competences / image cv /  bonton pour le telecharger</p>
-
-</section>
-
 <section id="portfolio">
   <h2>Portfolio</h2>
-  mettre les diff projet 
 
+  <!-- Boutons pour afficher les projets scolaires ou personnels -->
+  <div class="buttons">
+    <button onclick="showCategory('scolaire')">Projets Scolaires</button>
+    <button onclick="showCategory('personnel')">Projets Personnels</button>
+  </div>
+
+  <!-- Projets Scolaires -->
+  <div class="categorie" id="scolaire">
+    <h3>Projets Scolaires</h3>
+    <ul>
+      <li>
+        <h4>Conception d'un site pour Animath</h4>
+        <p>Développement d'un site web complet pour l'organisation Animath en utilisant HTML, CSS, JavaScript, et PHP.</p>
+      </li>
+      <li>
+        <h4>Compteur automatique de personnes</h4>
+        <p>Conception et réalisation d'un système de comptage automatique de personnes avec le langage C.</p>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Projets Personnels -->
+  <div class="categorie" id="personnel">
+    <h3>Projets Personnels</h3>
+    <ul>
+      <li>
+        <h4>Développement du site BEBALLER</h4>
+        <p>Création et gestion des fonctionnalités telles que la marketplace, l'organisation de tournois, et la connexion utilisateur via différents réseaux sociaux.</p>
+      </li>
+      <li>
+        <h4>Gestion de la caisse du Bureau des élèves</h4>
+        <p>Réalisation d'un site web pour gérer les transactions financières du Bureau des élèves (HTML, CSS, JavaScript, PHP).</p>
+      </li>
+    </ul>
+  </div>
 </section>
 
-<section id="contact">
-  <h2>Contactez-moi</h2>
-  <p>Vous pouvez me contacter via le formulaire ou les liens proposés, je vous répondrai dans les meilleurs délais.</p>
-  <p>Téléphone: 06 11 65 12 78</p>
-  <p>E-mail: antoine.dcgr@gmail.com</p>
-    
+<footer>
+  <p>© Copyright 2024 | Antoine Da Costa-Gomara Ruiz | Tous droits réservés</p>
+</footer>
 
-</section>
-
-
-
-
-
-  
-
-  <footer>
-    <p>© Copyright 2024|Antoine Da Costa-Gomara Ruiz|Tous droits réservés</p>
-  </footer>
-</section>
+<!-- Lien vers le fichier JavaScript externe -->
+<script src="script.js"></script>
 
 </body>
 </html>
