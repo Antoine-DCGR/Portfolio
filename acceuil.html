@@ -14,7 +14,7 @@
     <ul class="navigation">
       <li><a href="#about-me">Accueil</a></li>
       <li><a href="#profil">Profil</a></li>
-      <li><a href="#compétence">Compétences</a></li>
+      <li><a href="#skills">Compétences</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -35,7 +35,7 @@
   </div>
   
   <div id="profil-pict">
-    <img src="https://raw.githubusercontent.com/Antoine-DCGR/Portfolio/main/res/profil-pict.JPG" alt="Photo de Profil">
+    <img class="profil-pict-main" src="https://raw.githubusercontent.com/Antoine-DCGR/Portfolio/main/res/profil-pict.JPG" alt="Photo de Profil">
   </div>
   
   <div id="profil-txt">
@@ -51,34 +51,58 @@
 </section>
 
 <section id="status">
-  <div id="status-title">
-    <h2>Actuellement</h2>
-  </div>
-  
-  <div id="status-txt">
-    <p>En recherche d'une alternance</p>
-  </div>
+  <section id="skills">
+    <div id="skills-title">
+      <h2>Compétences</h2>
+    </div>
+
+    <div id="skills-content">
+      <div id="skills-visual">
+        <h3>Front-End</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Ajax</li>
+        </ul>
+
+        <h3>Back-End</h3>
+        <ul>
+            <li>Node.js</li>
+            <li>PHP</li>
+            <li>SQL/pgSQL</li>
+            <li>Java (Programmation orientée objet)</li>
+            <li>Langage C</li>
+            <li>Python</li>
+        </ul>
+
+        <h3>Autres Langages</h3>
+        <ul>
+            <li>UML</li>
+            <li>Développement d'applications (Android)</li>
+        </ul>
+
+        <h3>Logiciels</h3>
+        <ul>
+            <li>VS Code</li>
+            <li>Slack</li>
+            <li>Wix</li>
+            <li>Figma</li>
+        </ul>
+      </div>
+      
+      <div id="cv-pict">
+        <img src="https://raw.githubusercontent.com/Antoine-DCGR/Portfolio/main/res/CV_Antoine_DA_COSTA.jpg" alt="CV Antoine DA COSTA">
+        <div id="button-cv">
+          <a href="https://raw.githubusercontent.com/Antoine-DCGR/Portfolio/main/res/CV_Antoine_DA_COSTA.pdf" download="CV_Antoine_DA_COSTA.pdf">
+            <button>Télécharger le CV</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </section>
 
-<section id="skills">
-  <div id="skills-title">
-    <h2>Compétences</h2>
-  </div>
-
-  <div id="skills-visual">
-    <p>Visuel compétences</p>
-  </div>
-  
-  <div id="cv-pict">
-    <img src="https://raw.githubusercontent.com/Antoine-DCGR/Portfolio/main/res/CV_Antoine_DA_COSTA.jpg" alt="CV Antoine DA COSTA">
-  </div>
-
-  <div id="button-cv">
-    <a href="https://raw.githubusercontent.com/Antoine-DCGR/Portfolio/main/res/CV_Antoine_DA_COSTA.pdf" download="CV_Antoine_DA_COSTA.pdf">
-      <button>Télécharger le CV</button>
-    </a>
-  </div>
-</section>
 
 <section id="portfolio">
   <h2>Portfolio</h2>
@@ -121,10 +145,40 @@
 </section>
 
 <section id="contact">
-  <h2>Contactez-moi</h2>
-  <p>Vous pouvez me contacter via le formulaire ou les liens proposés, je vous répondrai dans les meilleurs délais.</p>
-  <p>Téléphone: 06 11 65 12 78</p>
-  <p>E-mail: antoine.dcgr@gmail.com</p>
+
+  <div id="contact-title">
+    <h2>Contactez-moi</h2>
+    <p>Vous pouvez me contacter via le formulaire ou les liens proposés, je vous répondrai dans les meilleurs délais.</p>
+  </div>
+  <div id="form-container">
+    <div id="form">
+      <form action="/contact" method="POST">
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message :</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+
+        <input type="submit" value="Envoyer">
+    </form>
+    </div>
+
+    <div id="contact-info">
+      <p>Téléphone: 06 11 65 12 78</p>
+      <p>E-mail: antoine.dcgr@gmail.com</p>
+      <a href="https://linkedin.com/in/antoine-DCGR" target="_blank">
+        <img src="https://raw.githubusercontent.com/Antoine-DCGR/Portfolio/main/res/logo-linkedin.png" alt="logo linkedin" >
+      </a>
+      <a href="https://github.com/Antoine-DCGR" target="_blank">
+        <img src="https://raw.githubusercontent.com/Antoine-DCGR/Portfolio/main/res/logo-github.png" alt="Description de l'image" >
+      </a>
+    </div>
+
+  </div>
+
 </section>
 
 <footer>

@@ -1,25 +1,247 @@
-.categorie {
-  display: none; /* Cacher les catégories par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.active {
-  display: block; /* Afficher la catégorie active */
+/* Barre de navigation fixe */
+nav {
+  position: fixed; /* Barre de navigation fixe en haut */
+  top: 0;
+  width: 100%;
+  background-color: #5A189A; /* Couleur de fond */
+  padding: 15px 0;
+  z-index: 1000; /* S'assurer que la navigation est au-dessus des autres éléments */
+  display: flex;
+  justify-content: center;
 }
 
-.buttons {
-  margin: 20px 0;
+.navigation {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin-right: 10px;
+.navigation li a {
+  color: #FFFFFF; /* Texte blanc */
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.navigation li a:hover {
+  color: #C3C3C3; /* Couleur grise au survol */
+}
+
+/* Section about-me */
+#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Hauteur pour occuper tout l'écran */
+  background:#240046;
+  text-align: center;
+  padding-top: 80px; /* Pour compenser la barre de navigation fixe */
+}
+
+#about-me h1 {
+  font-size: 3em;
+  color: #FFFFFF; /* Couleur du texte */
+}
+
+#about-me h2 {
+  font-size: 1.8em;
+  color: #BDA9E7; /* Couleur légèrement plus claire pour le métier */
+  margin-top: 20px;
+}
+
+#about-me button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: #5A189A;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2em;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #007BFF;
-  color: white;
+#about-me button:hover {
+  background-color: #7B2CBF; /* Changement de couleur au survol */
+}
+
+#about-me button a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+
+
+/*Profil*/
+
+#profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  background-color: #3C096C;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#profil-title h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#profil-pict img {
+  width: 183px;
+height: 246px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+#profil-txt {
+  max-width: 800px;
+  margin-top: 20px;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/*Status*/
+
+#status{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  background-color: #10002B;
+  color: #FFFFFF;
+  text-align: center;
+}
+#status-title h2{
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#status-txt p {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Style général de la section */
+#skills {
+  background-color: #1e003d;
+  padding: 20px;
+  border-radius: 8px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+#skills-title h2 {
+  color: #dcdcdc;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Conteneur pour le contenu */
+#skills-content {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch; /* S'assure que les divs enfants aient la même hauteur */
+  width: 100%;
+  flex-grow: 1;
+}
+
+/* Style pour les divs de compétences */
+#skills-visual, #cv-pict {
+  background-color: #5d1a9b;
+  padding: 15px;
+  border-radius: 15px;
+  flex: 1;
+  color: #dcdcdc;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Remplit toute la hauteur disponible */
+  overflow-y: auto; /* Permet le défilement si le contenu dépasse la hauteur */
+}
+
+/* Styles spécifiques pour les compétences */
+#skills-visual h3 {
+  background-color: #9c4fd9;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 5px 10px;
+  text-align: left;
+  margin: 5px 0;
+}
+
+#skills-visual ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#skills-visual li {
+  background-color: #2d004f;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 5px;
+  color: #dcdcdc;
+}
+
+/* Style pour l'image du CV */
+#cv-pict {
+
+  align-items: center;
+}
+
+#cv-pict img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Style du bouton */
+#button-cv {
+  text-align: center;
+}
+
+#button-cv button {
+  background-color: #9c4fd9;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#button-cv button:hover {
+  background-color: #b96bcf;
 }
 
 
